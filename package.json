@@ -1,0 +1,14 @@
+{
+  "name": "react-native-ota-updates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "export-android": "mkdir -p ../react-native-ota-updates/ota && react-native bundle --platform android --dev false --entry-file index.js --bundle-output ../react-native-ota-updates/ota/index.android.bundle --assets-dest ../react-native-ota-updates/ota && zip -j ../react-native-ota-updates/ota/index.android.bundle.zip ../react-native-ota-updates/ota/index.android.bundle && rm ../react-native-ota-updates/ota/index.android.bundle",
+    "export-ios": "mkdir -p ../react-native-ota-updates/ota && react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ../react-native-ota-updates/ota/main.jsbundle --assets-dest ../react-native-ota-updates/ota && zip -j ../react-native-ota-updates/ota/main.jsbundle.zip ../react-native-ota-updates/ota/main.jsbundle && rm ../react-native-ota-updates/ota/main.jsbundle"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
